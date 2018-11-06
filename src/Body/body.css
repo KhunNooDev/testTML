@@ -1,0 +1,158 @@
+body {
+  /*margin-top: 25px;*/
+  /*padding: 0;*/
+  font-size: 50%;
+  /*line-height: 1.5;*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer .content-wrap {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+}
+
+.layer .content-body {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.layer img {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.layer h1 {
+  font-size: 2em;
+}
+
+.bottom {
+  background: #222;
+  z-index: 1;
+}
+
+.bottom .content-body {
+  right: 5%;
+}
+
+.bottom h1 {
+  color: #fdab00;
+}
+
+.top {
+  background: #eee;
+  color: #222;
+  z-index: 2;
+  width: 50vw;
+}
+
+.top .content-body {
+  left: 5%;
+  color: #222;
+}
+
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #fdab00;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+}
+
+.skewed .handle {
+  top: 50%;
+  transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin: top;
+}
+
+.skewed .top {
+  transform: skew(-30deg);
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap {
+  transform: skew(30deg);
+  margin-left: 1000px;
+}
+
+.info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: block;
+  border: 1px solid gray;
+  width: 1000px;
+  height: 300px;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.tapvdo {
+  margin: 10px;
+  border: 1px solid gray;
+  position: absolute;
+  width: 99%;
+  min-height: 350px;
+  /*overflow: hidden;*/
+  text-align: center;
+}
+
+.tapvdo .content-body {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #000000;
+}
+.tapvdo iframe {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(30%, -50%);
+}
+
+.column img {
+  height: 200px;
+}
+
+.test {
+  position: unset;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 50px;
+    font-size: 75%;
+  }
+}
