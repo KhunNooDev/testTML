@@ -1,0 +1,27 @@
+.tapvdo {
+  margin: 10px;
+  border: 1px solid gray;
+  position: relative;
+  width: 99%;
+  min-height: 350px;
+  /*overflow: hidden;*/
+  text-align: center;
+}
+
+.tapvdo .content-body {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #000000;
+}
+.tapvdo iframe {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(30%, -50%);
+}
+
+@media (max-width: 768px) {
+}

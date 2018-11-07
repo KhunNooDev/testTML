@@ -1,16 +1,16 @@
-.header {
+/*.header {
   overflow: hidden;
   background-color: #68e1ff;
-  padding: 10px 200px;
+  padding: 10px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 50%;
 }
 
 .header a {
   float: left;
   color: #000000;
-  /*text-align: center;*/
+  text-align: center;
   padding: 5px 25px;
   text-decoration: none;
   font-size: 20px;
@@ -34,4 +34,4 @@
 
 .header-right {
   float: right;
-}
+}*/

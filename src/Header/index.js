@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "bootstrap";
-import "../1/bootstrap.css";
+import "../bootstrap/bootstrap.css";
 
 export default () => (
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">

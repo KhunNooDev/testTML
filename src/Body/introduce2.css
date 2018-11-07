@@ -1,0 +1,31 @@
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  text-align: center;
+  border: 1px solid gray;
+  width: 33.33%;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.column img {
+  height: 50%;
+}
+
+@media (max-width: 768px) {
+  .info {
+    display: grid;
+  }
+  .column {
+    text-align: center;
+    border: 1px solid gray;
+    width: 100%;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+  }
+}
